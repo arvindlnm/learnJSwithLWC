@@ -1,0 +1,31 @@
+<template>
+    <div class="center">
+        --------------------------------------------------Two Sum Problem ------------------------------------------------- <br/><br/>
+        Given an array of integers, return indices of the two numbers such that they add up to a specific target.<br/>
+        You may assume that each input would have exactly one solution, and you may not use the same element twice.<br/>
+
+        Given nums = [2, 7, 11, 15], target = 9,<br/>
+
+        Because nums[0] + nums[1] = 2 + 7 = 9,<br/>
+        return [0, 1].<br/>
+
+        <input type="number" label="Please enter number" onchange={changeInputNumber} value={inputNumber}></input><br/>
+        <input type="String" label="Comman Seperated number" value={inputArray} onchange={changeInputArray}></input>
+        <button name="Calulate" type="button" onclick={calculate}>Calulate</button>
+    </div>
+
+    <div class="center">
+        <div class="container">
+              <p class="info">
+                  <template for:each={outputArray} for:item="index">
+                    <li key={index}>
+                      
+                        {index}
+                      
+                    </li>
+                  </template>
+              </p>
+          </div>
+      </div>
+
+</template>

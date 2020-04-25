@@ -1,0 +1,17 @@
+<template>
+    <!-- LWC sample component <my-greeting> -->
+    <div class="center greeting">
+      <my-greeting speed="medium"></my-greeting>
+    </div>
+
+    <button name="stack" type="button" onclick={showStackTemplate}>Click Here for JS STACKs</button>
+    <button name="towsum" type="button" onclick={showTwoSumSolution}>Click Here for TWO SUM Solution</button>
+
+    <template if:true={showStack}>
+      <my-stacks></my-stacks>
+    </template>
+
+    <template if:true={showTwoSum}>
+      <my-twosumproblem></my-twosumproblem>
+    </template>
+</template>

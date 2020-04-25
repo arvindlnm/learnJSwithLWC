@@ -1,0 +1,23 @@
+<template>
+
+  <div class="center">
+      --------------------------------------------------Stack ------------------------------------------------- <br/><br/>
+      <input type="number" label="Please enter number" onchange={changeInputNumber} value={inputNumber}></input><br/>
+      <button name="PUSH" type="button" label="push" onclick={pushElement}>PUSH</button>
+      <button name="PUSH" type="button" label="push" onclick={popElement}>POP</button>
+  </div>
+
+  <!-- Page code -->
+  <div class="center">
+    <div class="container">
+          <p class="info">
+              Stack Info <br/>
+              Stack Size - {stackSize} <br/>
+              Last Element Pushed - {inputNumber} <br/>
+              Popped Element - {poppedElement} <br/>
+              Stack Elements - {stackElements}
+          </p>
+      </div>
+  </div>
+
+</template>
